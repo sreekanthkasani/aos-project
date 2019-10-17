@@ -1,0 +1,103 @@
+body {
+  background: #efefef;
+  color: #777;
+  font-family: "Roboto", Lato, sans-serif;
+}
+
+.container {
+  max-width: 750px;
+  padding: 0.75rem;
+  margin: 0 auto;
+}
+
+.page {
+  background: white;
+  padding: 1.75rem;
+  border-radius: 5px;
+  border-top: 10px solid #F44336;
+  -webkit-box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.page header {
+  margin-bottom: 150px;
+}
+.page header nav {
+  float: left;
+}
+.page header nav .menu-icon {
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.page header nav .menu-icon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  width: 20px;
+  background: #aaa;
+  transform: translateX(-50%) translateY(-50%);
+  transition: background 0.5s;
+}
+.page header nav .menu-icon span::before, .page header nav .menu-icon span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(-6px);
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #aaa;
+  transition: transform 0.5s;
+}
+.page header nav .menu-icon span::after {
+  transform: translateY(6px);
+}
+.page header .account {
+  float: right;
+  background: #aaa;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.content {
+  clear: both;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.content h1 {
+  font-size: 2.4em;
+  text-align: center;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 0.25rem;
+}
+.content .date {
+  text-align: center;
+  color: #999;
+  font-size: 1.25em;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.content p {
+  text-align: justify;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+  margin: 40px 0;
+  color: #333;
+}
+.content img {
+  max-width: 100%;
+}
+.content .desc {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #333;
+  margin: 5px 0 0 0;
+}
